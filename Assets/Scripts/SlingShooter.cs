@@ -11,6 +11,7 @@ public class SlingShooter : MonoBehaviour
     private float _radius = 0.75f;
     [SerializeField]
     private float _throwSpeed = 30f;
+    private Bird _bird;
     void Start()
     {
         _startPos = transform.position;
@@ -34,6 +35,12 @@ public class SlingShooter : MonoBehaviour
             dir = dir.normalized * _radius;
         }
         transform.position = _startPos + dir;
+    }
+
+    public void InitiateBird(Bird bird) {
+        _bird = bird;
+        _bird.MoveTo(gameObject.transform.position, gameObject);
+        Collider.enabled = true;
     }
 
     // Update is called once per frame

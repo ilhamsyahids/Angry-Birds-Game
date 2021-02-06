@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour
     public List<Bird> Birds;
     void Start()
     {
+        SlingShooter.InitiateBird(Birds[0]);
     }
 
     // Update is called once per frame
