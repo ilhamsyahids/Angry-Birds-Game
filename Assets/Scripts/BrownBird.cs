@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BrownBird : Bird
 {
+    public GameObject deathEffect;
     private int counter = 0;
     private int maxCounter = 10;
 
@@ -19,6 +20,7 @@ public class BrownBird : Bird
 
     public override void OnHit() {
         RigidBody.bodyType = RigidbodyType2D.Kinematic;
+        Instantiate(deathEffect, transform.position, Quaternion.identity);
         StartCoroutine(ExplodeAfter(0.01f));
     }
 }

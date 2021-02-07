@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38e364dd99b394697afcd1d0cdcca314, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 50
+  Health: 30
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,7 +359,7 @@ MonoBehaviour:
   SlingShooter: {fileID: 1624136990}
   TrailController: {fileID: 1586274563}
   Birds:
-  - {fileID: 1660502663}
+  - {fileID: 681850456}
   - {fileID: 950691168}
   - {fileID: 681850456}
   Enemies:
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 681850457}
   - component: {fileID: 681850456}
   m_Layer: 0
-  m_Name: RedRiot (2)
+  m_Name: BrownBird
   m_TagString: Bird
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -434,12 +434,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 681850455}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd73161f9c6ea4530bcf1476c5f36fc2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f55ea9c65cfa4ef0a2b2cc773ee60c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Parent: {fileID: 0}
   RigidBody: {fileID: 681850458}
   Collider: {fileID: 681850457}
+  deathEffect: {fileID: 2942343518319727517, guid: 584815005e3d345dfa82395dcbaea15e,
+    type: 3}
 --- !u!58 &681850457
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -514,7 +516,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 8d65fab5aa828d7439359b962c57d921, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8d20e3fb65723114693388b7b8c277c6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -533,7 +535,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681850455}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.25, y: -0.88, z: 0.0087890625}
+  m_LocalPosition: {x: -1.56, y: -0.88, z: 0.0087890625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1907507264}
@@ -818,7 +820,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950691163}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.99, y: -0.89, z: 0.0087890625}
+  m_LocalPosition: {x: -0.69, y: -0.89, z: 0.0087890625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1907507264}
