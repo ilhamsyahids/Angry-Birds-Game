@@ -7,7 +7,19 @@ public class GameController : MonoBehaviour
     public List<Bird> Birds;
     void Start()
     {
+        for (int i = 0; i < Birds.Count; i++)
+        {
+            Birds[i].OnBirdDestroy += ChangeBird;
+        }
         SlingShooter.InitiateBird(Birds[0]);
+    }
+
+    public void ChangeBird() {
+        Birds.RemoveAt(0);
+
+        if (Birds.Count > 0) {
+            SlingShooter.InitiateBird(Birds[0]);
+        }
     }
 
     // Update is called once per frame

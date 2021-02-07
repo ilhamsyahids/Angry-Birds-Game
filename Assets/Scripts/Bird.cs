@@ -1,6 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Bird : MonoBehaviour
 {
@@ -17,6 +17,12 @@ public class Bird : MonoBehaviour
         RigidBody.bodyType = RigidbodyType2D.Kinematic;
         Collider.enabled = false;
         _state = BirdState.Idle;
+    }
+
+    public UnityAction OnBirdDestroy = delegate { };
+
+    private void OnDestroy() {
+        OnBirdDestroy();
     }
 
     private void FixedUpdate() {
