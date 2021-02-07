@@ -69,9 +69,7 @@ public class Bird : MonoBehaviour
         OnBirdShot(this);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public virtual void OnTap() {
+        // Do nothing
     }
 }
