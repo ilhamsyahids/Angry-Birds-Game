@@ -79,9 +79,4 @@ public class SlingShooter : MonoBehaviour
         Collider.enabled = true;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
