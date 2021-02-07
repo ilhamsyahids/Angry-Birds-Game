@@ -359,7 +359,7 @@ MonoBehaviour:
   SlingShooter: {fileID: 1624136990}
   TrailController: {fileID: 1586274563}
   Birds:
-  - {fileID: 681850456}
+  - {fileID: 1660502663}
   - {fileID: 950691168}
   - {fileID: 681850456}
   Enemies:
@@ -535,7 +535,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681850455}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.56, y: -0.88, z: 0.0087890625}
+  m_LocalPosition: {x: -1.2, y: -0.88, z: 0.0087890625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1907507264}
@@ -820,7 +820,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950691163}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.69, y: -0.89, z: 0.0087890625}
+  m_LocalPosition: {x: -0.48, y: -0.89, z: 0.0087890625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1907507264}
