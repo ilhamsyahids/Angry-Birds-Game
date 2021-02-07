@@ -4,6 +4,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public SlingShooter SlingShooter;
+    public TrailController TrailController;
     public List<Bird> Birds;
     public List<Enemy> Enemies;
     private bool _isGameEnded = false;
@@ -12,12 +13,18 @@ public class GameController : MonoBehaviour
         for (int i = 0; i < Birds.Count; i++)
         {
             Birds[i].OnBirdDestroy += ChangeBird;
+            Birds[i].OnBirdShot += AssignTrail;
         }
         for (int i = 0; i < Enemies.Count; i++)
         {
             Enemies[i].OnEnemyDestroy += CheckGameEnd;
         }
         SlingShooter.InitiateBird(Birds[0]);
+    }
+
+    public void AssignTrail(Bird bird) {
+        TrailController.SetBird(bird);
+        StartCoroutine(TrailController.SpawnTrail());
     }
 
     public void ChangeBird() {

@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 240978332}
   - component: {fileID: 240978331}
   - component: {fileID: 240978333}
+  - component: {fileID: 240978334}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -230,6 +231,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &240978334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240978329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e364dd99b394697afcd1d0cdcca314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 50
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,6 +360,8 @@ MonoBehaviour:
   - {fileID: 1660502663}
   - {fileID: 950691168}
   - {fileID: 681850456}
+  Enemies:
+  - {fileID: 240978334}
 --- !u!4 &556137010
 Transform:
   m_ObjectHideFlags: 0
@@ -1110,6 +1126,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 062d4e602a6764ae1854b499fa7c22b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1586274562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1586274564}
+  - component: {fileID: 1586274563}
+  m_Layer: 0
+  m_Name: TrailController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1586274563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586274562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce143ea51b5b74d438a2600d67e97dc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Trail: {fileID: 3191070113903654511, guid: e44882a5dd7884971aa3442feeef1823, type: 3}
+  TargetBird: {fileID: 0}
+--- !u!4 &1586274564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586274562}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.5625687, y: 0.4690031, z: 0.14355469}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1624136987
 GameObject:
   m_ObjectHideFlags: 0
