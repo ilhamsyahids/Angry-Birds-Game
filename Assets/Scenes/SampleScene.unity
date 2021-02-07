@@ -360,7 +360,7 @@ MonoBehaviour:
   TrailController: {fileID: 1586274563}
   Birds:
   - {fileID: 1660502663}
-  - {fileID: 0}
+  - {fileID: 950691168}
   - {fileID: 681850456}
   Enemies:
   - {fileID: 240978334}
@@ -822,7 +822,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1907507264}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &950691165
 CircleCollider2D:
@@ -1472,7 +1472,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1907507264}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1660502661
 Rigidbody2D:
@@ -1606,8 +1606,8 @@ Transform:
   m_LocalPosition: {x: -6.0923986, y: -2.1278102, z: -0.0087890625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1660502660}
   - {fileID: 950691164}
+  - {fileID: 1660502660}
   - {fileID: 681850460}
   m_Father: {fileID: 0}
   m_RootOrder: 2
